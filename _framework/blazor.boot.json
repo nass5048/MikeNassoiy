@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "test1",
   "resources": {
-    "hash": "sha256-YoVYSS1f/tREScbF22rQSHYL0qbEjZ4nqb0QrSaml5A=",
+    "hash": "sha256-OsseGEMIIv7+j+kAdXsJN/vj+G8HM5wzI/G++ElZaSI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-D0bzod5lwwSzPR43JC8TTCcZKw+3jIHOk8CZFCRj5is="
     },
@@ -39,17 +39,16 @@
       "System.Diagnostics.DiagnosticSource.wasm": "sha256-43MsWaPIxVBUcp3vPJ//ywkkT0P7oipj2tdG5qmZRc4=",
       "System.Linq.wasm": "sha256-iKFa/PjePFHkBCANqrtk3HupiIkaiIpHxd09nQq4hG4=",
       "System.Memory.wasm": "sha256-cdXqXmnA83UXt4hKR63dFQEbh6FG8iwRqqwLrBjmD+c=",
-      "System.Net.Http.Json.wasm": "sha256-ESO2LRp70XIyrohjDYRwNMDFFRO+V0VHAlpYAgIVuzs=",
-      "System.Net.Http.wasm": "sha256-jTpDBGv5oEYpxKADfPzkm+zqGQjUOo+/HOPBBVT9N7w=",
+      "System.Net.Http.wasm": "sha256-jZws4feCPeangrmnSembt7it+vI3Vm4up2rXGM6VjsA=",
       "System.Net.Primitives.wasm": "sha256-0iGE/TGI/dumMWRUO0h+zhTxOl/QcHYzx9mS2hxiK3s=",
-      "System.Private.Uri.wasm": "sha256-EL3cMn9tZr/2xwMuFI6cNypSKLu++RDPJP4UvtWWcAA=",
+      "System.Private.Uri.wasm": "sha256-7OoOi/akKxSmkx+Lvy/ZcA8WOJ2Pf2A33ZbPWK2mTkQ=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-VobV4s6waaPCxdGb/7K0/4/r409Bna15Y0gB0Uvt2e8=",
-      "System.Runtime.wasm": "sha256-V/zQzOVPImBSg71N89gtMyVje3pE5gIEqYSCfcKiqn0=",
+      "System.Runtime.wasm": "sha256-15mH7Qj2OQFE8lgovfFe4Pw+llmngWnMzxZs4hOdQKY=",
       "System.Text.Encodings.Web.wasm": "sha256-bDRdy+G9zVcWlrj3vP+blIqH38T9rpqxvXdcv1INqnE=",
-      "System.Text.Json.wasm": "sha256-yyKkODanyxktG6hGJIZAH52g1zd/ajlwcWcExOQ6eAo=",
+      "System.Text.Json.wasm": "sha256-U1g9FYbro8joz0PcqsxuCj2r1C0RQZxuuuFN/jlaGAE=",
       "System.Text.RegularExpressions.wasm": "sha256-SW5L77HZP6F1seYrYKk/8bCw55JedaRD8wTtEYIeaPY=",
-      "System.Private.CoreLib.wasm": "sha256-Y8q44fo3JbNJJfaK3j/6769NM7yDqBneLpvqT54LuHw=",
-      "test1.wasm": "sha256-mi5rWJ9UqNqMwl8k1VHPez977wWxgIx2plno5qKoN3I="
+      "System.Private.CoreLib.wasm": "sha256-YGeLPoSGjuBXzlMyy/BHoW3fOTLEfc9oCe5C8jdbL4U=",
+      "test1.wasm": "sha256-gc4vBplUVEx0DmBo3eIkYxHmkrChpoqfKurulnGki7I="
     }
   },
   "cacheBootResources": true,
