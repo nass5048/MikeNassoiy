@@ -12,10 +12,11 @@ main[b-io94geypxe] {
 .sidebar[b-io94geypxe] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
-
+.content[b-io94geypxe]{
+    min-height: 83vh;
+}
 .top-row[b-io94geypxe] {
     background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
@@ -82,12 +83,25 @@ main[b-io94geypxe] {
 }
 
 .top-row[b-ghqr45sitf] {
-    height: 3.5rem;
+    height: 12.5rem;
     background-color: rgba(0,0,0,0.4);
+}
+
+.avatar[b-ghqr45sitf] {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    background: #ddd;
+    margin: 0 auto;
 }
 
 .navbar-brand[b-ghqr45sitf] {
     font-size: 1.1rem;
+    text-align: center;
+    flex: auto;
 }
 
 .bi[b-ghqr45sitf] {
@@ -153,10 +167,43 @@ main[b-io94geypxe] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
-    
+
     .nav-scrollable[b-ghqr45sitf] {
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
+        max-height: calc(100vh - 3.5rem);
         overflow-y: auto;
+    }
+
+}
+/* /Pages/Components/Spinner.razor.rz.scp.css */
+.overlay[b-0dxb6nnxfv] {
+    position: fixed; /* Positions the element relative to the viewport */
+    top: 0; /* Aligns the element to the top of the viewport */
+    left: 0; /* Aligns the element to the left of the viewport */
+    width: 100vw; /* Sets the width to 100% of the viewport width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    z-index: 9999; /* Ensures the element is on top of other content */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.spinner[b-0dxb6nnxfv] {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin-b-0dxb6nnxfv 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin-b-0dxb6nnxfv {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
