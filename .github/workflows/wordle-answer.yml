@@ -3,7 +3,7 @@ name: Fetch NYT Wordle Answer
 on:
   schedule:
     - cron: "5 0 * * *"  # Runs daily at 00:05 UTC
-  workflow_dispatch:      # Allows manual manual run
+  workflow_dispatch:      # Allows manual run
 
 jobs:
   update-wordle:
@@ -13,7 +13,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Fetch NYT Wordle JSON
+      - name: Install jq (for JSON parsing)
+        run: sudo apt-get install jq -y
+
+      - name: Fetch NYT Wordle JSON and extract solution
         run: |
           TODAY=$(date +'%Y-%m-%d')
           URL="https://www.nytimes.com/svc/wordle/v2/$TODAY.json"
@@ -25,6 +28,7 @@ jobs:
         run: |
           git config user.name "Wordle Bot"
           git config user.email "actions@github.com"
+
           if [[ -n "$(git status --porcelain)" ]]; then
             git add daily-word.json
             git commit -m "Update Wordle solution for $TODAY"
