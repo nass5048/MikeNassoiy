@@ -34,7 +34,9 @@ jobs:
         run: |
           git config user.name "Wordle Bot"
           git config user.email "actions@github.com"
-      
+
+          echo "Repo = ${{ github.repository }}"
+          
           # Set token-authenticated remote
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
       
