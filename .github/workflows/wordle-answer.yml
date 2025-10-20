@@ -29,14 +29,18 @@ jobs:
           echo "{ \"solution\": \"$SOLUTION\" }" > daily-word.json
 
       - name: Commit & Push if Changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "Wordle Bot"
           git config user.email "actions@github.com"
 
           if [[ -n "$(git status --porcelain)" ]]; then
             git add daily-word.json
-            git commit -m "Update Wordle solution for $TODAY"
-            git push
+            git commit -m "Update Wordle solution for $(date +'%Y-%m-%d')"
+
+            # Force authentication when pushing
+            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           else
             echo "No changes to commit."
           fi
