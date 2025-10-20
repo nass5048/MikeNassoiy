@@ -39,8 +39,11 @@ jobs:
             git add daily-word.json
             git commit -m "Update Wordle solution for $(date +'%Y-%m-%d')"
 
-            # Force authentication when pushing
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+            # Force remote URL with token
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+
+            git push origin HEAD:master
           else
             echo "No changes to commit."
           fi
+
