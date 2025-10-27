@@ -207,3 +207,133 @@ main[b-io94geypxe] {
         transform: rotate(360deg);
     }
 }
+/* /Pages/Home.razor.rz.scp.css */
+
+:root[b-ozyttileyn] {
+    --accent: #0b5ed7;
+    --muted: #6b7280;
+    --card: #fbfbfd;
+    --maxw: 900px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #111827;
+}
+
+body[b-ozyttileyn], .resume-page[b-ozyttileyn] {
+    background: linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.resume[b-ozyttileyn] {
+    width: 100%;
+    max-width: var(--maxw);
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(16, 24, 40, 0.06);
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+header[b-ozyttileyn] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e6e9ee;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.name[b-ozyttileyn] {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.contact[b-ozyttileyn] {
+    margin-left: auto;
+    text-align: right;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+    .contact a[b-ozyttileyn] {
+        color: inherit;
+        text-decoration: none;
+    }
+
+section h2[b-ozyttileyn] {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    color: var(--accent);
+    letter-spacing: 0.4px;
+}
+
+.job[b-ozyttileyn], .edu[b-ozyttileyn], .item[b-ozyttileyn] {
+    margin-bottom: 10px;
+}
+
+.meta[b-ozyttileyn] {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: var(--muted);
+}
+
+.bullets[b-ozyttileyn] {
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+}
+
+.two-col[b-ozyttileyn] {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+}
+
+@media (max-width: 880px) {
+    .two-col[b-ozyttileyn] {
+        grid-template-columns: 1fr;
+    }
+
+    .contact[b-ozyttileyn] {
+        text-align: left;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    header[b-ozyttileyn] {
+        align-items: flex-start;
+    }
+}
+
+.skill-list[b-ozyttileyn] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skill[b-ozyttileyn] {
+    background: #fff;
+    border: 1px solid #eef2ff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: #111827;
+}
+
+@media print {
+    body[b-ozyttileyn], .resume-page[b-ozyttileyn] {
+        background: #fff;
+        padding: 0;
+    }
+
+    .resume[b-ozyttileyn] {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 12px;
+    }
+}
